@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+      
+    <ThingDef ParentName="ResourceBase">
+    <defName>Crystal</defName>
+    <label>Basic Crystal</label>
+    <description>A rare crystal found within stone chunks.</description>
+    <graphicData>
+      <texPath>Things/Item/Crystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>1</Mass>
+      <Beauty>20</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</ThingDefs>

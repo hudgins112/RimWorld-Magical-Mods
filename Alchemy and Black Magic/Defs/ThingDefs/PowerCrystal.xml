@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+      
+    <ThingDef ParentName="ResourceBase">
+    <defName>PowerCrystal</defName>
+    <label>Power Crystal</label>
+    <description>A valuable transmuted crystal used to "power" certain Alchemy and Magical items.</description>
+    <graphicData>
+      <texPath>Things/Item/PowerCrystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>4000</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <Beauty>50</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+        <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+<comps>
+	<li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(0, 128, 255)</glowColor>
+      </li></comps>
+  </ThingDef>
+
+</ThingDefs>

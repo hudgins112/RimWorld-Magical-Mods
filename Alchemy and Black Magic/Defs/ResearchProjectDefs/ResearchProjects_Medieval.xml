@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>Mining</defName>
+		<label>Mining</label>
+		<description>Allows you build a medieval era resource mine.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+		</tags>
+		<prerequisites>
+    	</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

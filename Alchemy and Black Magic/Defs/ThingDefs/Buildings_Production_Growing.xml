@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>MagicalGrowingBasin</defName>
+    <label>magical growing basin</label>
+    <description>Grows plants quickly in the blood of your enemies.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Building/magicalgrowingbasin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,4)</drawSize>
+<drawRotated>true</drawRotated>
+      <allowFlip>true</allowFlip>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.30</fillPercent>
+    <statBases>
+      <WorkToBuild>2800</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(1,4)</size>
+    <costStuffCount>75</costStuffCount>
+    <CostList>
+       <Human_Meat>10</Human_Meat>
+    </CostList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <fertility>2.3</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+<comps><li Class="CompProperties_Lifespan">
+        <lifeSpanTicks>9000000</lifeSpanTicks>
+      </li></comps>
+    <tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>MagicGrowing</li>
+    </researchPrerequisites>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+  
+  </ThingDef>
+
+
+  </Defs>

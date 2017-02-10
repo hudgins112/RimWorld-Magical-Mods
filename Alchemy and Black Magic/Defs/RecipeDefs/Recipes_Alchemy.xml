@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecipeDefs>
+
+  
+<RecipeDef>
+    <defName>MakeJade</defName>
+    <label>Make 10 Jade</label>
+    <description>Transmute resources to make jade.</description>
+    <jobString>Making jade.</jobString>
+    <workAmount>20000</workAmount>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+    <li>
+        <filter>
+          <thingDefs>
+            <li>CorpseEssence</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+	      </ingredients>
+    <products>
+      <Jade>10</Jade>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+            <li>Manufactured</li>
+      </categories>
+	  <thingDefs>
+		<li>Steel</li>
+    <li>Silver</li>
+		<li>CorpseEssence</li>
+	  </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<RecipeDef>
+    <defName>MakeGold</defName>
+    <label>Make 50 Gold</label>
+    <description>Transmute resources to make gold.</description>
+    <jobString>Making gold.</jobString>
+    <workAmount>15000</workAmount>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CorpseEssence</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+	      </ingredients>
+    <products>
+      <Gold>50</Gold>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+            <li>Manufactured</li>
+      </categories>
+	  <thingDefs>
+		<li>Steel</li>
+    <li>CorpseEssence</li>
+	  </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+		<defName>DrainCorpseEssence</defName>
+		<label>Drain Corpse Essence</label>
+		<description>Drains magical essence from the blood and bones of human corpses.</description>
+		<jobString>Draining corpse essence.</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+		<CorpseEssence>5</CorpseEssence>
+	</products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesHumanlike</li>
+      </categories>
+    </fixedIngredientFilter>
+	</RecipeDef>
+  
+<RecipeDef>
+    <defName>TransmuteHealRoot</defName>
+    <label>Make 10 Elixir of Healing</label>
+    <description>Transmute Heal Root into a powerful healing elixir.</description>
+    <jobString>Making Elixir.</jobString>
+    <workAmount>8000</workAmount>
+    <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HerbalMedicine</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+	          <filter>
+          <thingDefs>
+            <li>CorpseEssence</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+	      </ingredients>
+    <products>
+      <HealingElixir>10</HealingElixir>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+            <li>Medicine</li>
+      </categories>
+	  <thingDefs>
+		<li>HerbalMedicine</li>
+    <li>CorpseEssence</li>
+	  </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+<RecipeDef>
+		<defName>MakePowerCrystal</defName>
+		<label>Make Power Crystal</label>
+		<description>Transmutes basic crystals into a Power Crystal.</description>
+    <jobString>Making Power Crystal.</jobString>
+    <workAmount>5000</workAmount>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Crystal</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+      <li>
+	          <filter>
+          <thingDefs>
+            <li>CorpseEssence</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+		</ingredients>
+<products>
+      <PowerCrystal>1</PowerCrystal>
+    </products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Manufactured</li>
+			</categories>
+		</fixedIngredientFilter>
+		</RecipeDef>
+
+<RecipeDef>
+<defName>SearchStoneChunks</defName>
+    <label>search stone chunks</label>
+    <description>Search through any stone chunk to find crystals.Needed in Power Crystal production</description>
+    <jobString>Searching stone chunk for crystal.</jobString>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<recipeUsers>
+        <li>TableStonecutter</li>
+      </recipeUsers>
+    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+    </ingredients>
+    <products>
+      <Crystal>1</Crystal>
+	      </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</RecipeDefs>

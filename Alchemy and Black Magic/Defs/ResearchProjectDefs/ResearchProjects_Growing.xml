@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResearchProjectDefs>
+
+  <ResearchProjectDef>
+    <defName>MagicGrowing</defName>
+    <label>Magical Growing</label>
+    <description>Items to grow foods...magically of course.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Neolithic</techLevel>
+      </ResearchProjectDef>
+</ResearchProjectDefs>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>MedievalMine</defName>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <label>medieval mine</label>
+    <description>A medieval era mine, used to mine deep resources. Requires wood to refuel torches and shaft supports.</description>
+    <size>(3,3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <designationCategory>Production</designationCategory>
+    <designationHotKey>Misc12</designationHotKey>
+    <specialDisplayRadius>1.5</specialDisplayRadius>
+    <rotatable>true</rotatable>
+    <costList>
+      <WoodLog>300</WoodLog>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_ShowDeepResources</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>Mining</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-25</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+						<li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
+        <fuelCapacity>100.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+      </li>
+      </comps>
+      <recipes>
+      <li>MiningDeepSteel</li>
+      <li>MiningDeepSilver</li>
+      <li>MiningDeepPlasteel</li>
+      <li>MiningDeepMarble</li>
+      <li>MiningDeepSandstone</li>
+      <li>MiningDeepGranite</li>
+      <li>MiningDeepLimestone</li>
+      <li>MiningDeepSlate</li>
+      <!--<li>MiningDeepCrystal</li>
+      <li>MiningDeepLead</li>-->
+      </recipes>
+      <inspectorTabs>
+      <li>ITab_Bills</li>
+      </inspectorTabs>
+      <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Production/MedievalMine</texPath>
+      <drawSize>(3.3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+
+  </ThingDef> 
+ </ThingDefs>

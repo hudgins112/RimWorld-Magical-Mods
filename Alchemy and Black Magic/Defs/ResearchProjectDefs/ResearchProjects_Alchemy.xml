@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>Alchemy</defName>
+		<label>Alchemy and Black Magic</label>
+		<description>Allows you to practice the art of Alchemy and Black Magic.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+		</tags>
+		<prerequisites>
+    	</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

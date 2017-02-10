@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>HealingElixir</defName>
+    <label>elixir of healing</label>
+    <description>Your first introduction into Alchemy Healing! Effect is similar to Glitterworld meds.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Item/HealingElixir</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>1.6</MedicalPotency>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

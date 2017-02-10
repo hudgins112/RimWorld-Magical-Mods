@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+      
+<ThingDef ParentName="ResourceBase">
+    <defName>CorpseEssence</defName>
+    <label>Human Corpse Essence</label>
+    <description>Otherworldly magic, drained from the corpse of your dead enemys. Used in Alchemy recipes.</description>
+    <graphicData>
+      <texPath>Things/Item/CorpseEssence</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>250</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>0</Flammability>
+			<DeteriorationRate>.5</DeteriorationRate>
+		</statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</ThingDefs>

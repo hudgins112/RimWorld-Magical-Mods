@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<ThingDef ParentName="BuildingBase">
+    <defName>MagicPassiveCooler</defName>
+    <label>magic passive cooler</label>
+    <description>A traditional unpowered cooler, that has been infused with the magic of Rimworld. Will not freeze perishables, but will keep items refrigerated. Lasts about 2 years before needing to rebuild.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/PassiveCooler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <WoodLog>500</WoodLog>
+	<Steel>300</Steel>
+	<CorpseEssence>50</CorpseEssence>
+	<Jade>20</Jade>	
+
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+	<li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(0, 128, 255)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-30</heatPerSecond>
+        <heatPushMinTemperature>1</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifeSpanTicks>9000000</lifeSpanTicks>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>MagicPassiveCooler</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MagicFreezer</defName>
+    <label>magic freezer</label>
+    <description>A highly advanced, and expensive, magical freezing device. It gains its power from Power Crystals. Meant for end game freezing of perishable goods. Lasts over 4 years before needing to be rebuilt.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/MagicFreezer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+<drawSize>(3,1)</drawSize>
+      <drawRotated>true</drawRotated>
+      <allowFlip>true</allowFlip>
+          </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <Steel>1000</Steel>
+      <Plasteel>250</Plasteel>
+	    <Gold>50</Gold>
+	    <Jade>20</Jade>	
+      <PowerCrystal>5</PowerCrystal>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+	<li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(212, 240, 255)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-30</heatPerSecond>
+        <heatPushMinTemperature>-10</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Lifespan">
+        <lifeSpanTicks>18000000</lifeSpanTicks>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>MagicFreezer</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

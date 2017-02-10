@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plants>
+  <ThingDef ParentName="TreeBase">
+    <defName>PlantElm</defName>
+    <label>Elm Tree</label>
+    <description>An-elm tree. tall and beautiful.</description>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Beauty>5</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/ElmTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.15, 0.3, 0.1)</volume>
+      </shadowData>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+      <plant>
+           <fertilitySensitivity>1.0</fertilitySensitivity>
+      <dieIfLeafless>false</dieIfLeafless>
+      <reproduces>false</reproduces>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>WoodLog</harvestedThingDef>
+      <harvestDestroys>true</harvestDestroys>
+      <harvestYield>30</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+        </sowTags>
+      <topWindExposure>0.2</topWindExposure>
+      <growDays>20.0</growDays>
+      <blockAdjacentSow>false</blockAdjacentSow>
+          </plant>
+  </ThingDef>
+</Plants>
